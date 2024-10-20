@@ -48,7 +48,7 @@ if(sort_year_desc){
     arrange(desc(issued), author$family)
 } else{
   bibliography_entries("data/bib_articles.bib") %>%
-    arrange(desc(issued), author$family)
+    arrange(issued, author$family)
 }
 ```
 
@@ -60,7 +60,7 @@ if(sort_year_desc){
     arrange(desc(issued), author$family)
 } else{
   bibliography_entries("data/bib_book_chapters.bib") %>%
-    arrange(desc(issued), author$family)
+    arrange(issued, author$family)
 }
 ```
 
@@ -72,7 +72,7 @@ if(sort_year_desc){
     arrange(desc(issued), author$family)
 } else{
   bibliography_entries("data/bib_github.bib") %>%
-    arrange(desc(issued), author$family)
+    arrange(issued, author$family)
 }
 ```
 
@@ -84,7 +84,7 @@ if(sort_year_desc){
     arrange(desc(issued), author$family)
 } else{
   bibliography_entries("data/bib_code.bib") %>%
-    arrange(desc(issued), author$family)
+    arrange(issued, author$family)
 }
 ```
 
@@ -96,7 +96,7 @@ if(sort_year_desc){
     arrange(desc(issued), author$family)
 } else{
   bibliography_entries("data/bib_data.bib") %>%
-    arrange(desc(issued), author$family)
+    arrange(issued, author$family)
 }
 ```
 
@@ -108,7 +108,7 @@ if(sort_year_desc){
     arrange(desc(issued), author$family)
 } else{
   bibliography_entries("data/bib_preprints.bib") %>%
-    arrange(desc(issued), author$family)
+    arrange(issued, author$family)
 }
 ```
 
@@ -120,7 +120,7 @@ if(sort_year_desc){
     arrange(desc(issued), author$family)
 } else{
   bibliography_entries("data/bib_others.bib") %>%
-    arrange(desc(issued), author$family)
+    arrange(issued, author$family)
 }
 ```
 
