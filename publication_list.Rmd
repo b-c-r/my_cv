@@ -26,7 +26,7 @@ knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = e
 
 ```{r setup, include=FALSE}
 #### design settings for the output ####
-sort_year_desc <- FALSE                                                          # sort the publications descending (latest first) or ascending (oldest first)
+sort_year_desc <- TRUE                                                          # sort the publications descending (latest first) or ascending (oldest first)
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)           # default settings for CV output
 
