@@ -50,5 +50,6 @@ rsconnect/
 
 # Output files
 *.tex
+*.log
 *.html
 *.htm
