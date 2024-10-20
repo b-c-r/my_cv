@@ -37,7 +37,9 @@ library(vitae)                                                                  
 # library(lubridate)                                                              # time data manipulation
 ```
 
-# Articles (peer reviewed)
+Find below an overview about my [peer-reviewed articles][Articles], [book chapters][Book Chapters], [GitHub repositories][GitHub repositories], elsewhere published [code][Code published elsewhere], published [data][Data published], and [post- and preprints][Post- and Preprints].
+
+# Articles
 
 ```{r articles}
 if(sort_year_desc){
@@ -61,21 +63,43 @@ if(sort_year_desc){
 }
 ```
 
-# Code Publications
+# GitHub repositories
+
+```{r github_repos}
+if(sort_year_desc){
+  bibliography_entries("data/bib_github.bib") %>%
+    arrange(desc(issued), author$family)
+} else{
+  bibliography_entries("data/bib_github.bib") %>%
+    arrange(desc(issued), author$family)
+}
+```
+
+# Code published elsewhere
 
 ```{r code_publications}
-#bibliography_entries("data/code_publications.bib") %>%
-#  arrange(desc(issued), author$family)
+if(sort_year_desc){
+  bibliography_entries("data/bib_code.bib") %>%
+    arrange(desc(issued), author$family)
+} else{
+  bibliography_entries("data/bib_code.bib") %>%
+    arrange(desc(issued), author$family)
+}
 ```
 
-# Data Publications
+# Data published
 
 ```{r data_publications}
-#bibliography_entries("data/data_publications.bib") %>%
-#  arrange(desc(issued), author$family)
+if(sort_year_desc){
+  bibliography_entries("data/bib_data.bib") %>%
+    arrange(desc(issued), author$family)
+} else{
+  bibliography_entries("data/bib_data.bib") %>%
+    arrange(desc(issued), author$family)
+}
 ```
 
-# Pre- and Postprints
+# Post- and Preprints
 
 ```{r preprints}
 if(sort_year_desc){
@@ -87,10 +111,7 @@ if(sort_year_desc){
 }
 ```
 
-
 ```{r eval=FALSE, include=FALSE}
 ## helpful resources, thx to the authors:
 # https://stackoverflow.com/questions/26174565/r-in-rstudio-how-do-i-make-knitr-output-to-a-different-folder-to-avoid-clutteri
 ```
-
-
