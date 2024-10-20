@@ -10,12 +10,13 @@ linkedin: bjoern-c-rall
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 027d00
 header-includes:
-  - \definecolor{linkscolor}{HTML}{001594}
+  - \definecolor{webcolor}{HTML}{001594}
+  - \definecolor{interncolor}{HTML}{737373}
   - \hypersetup{colorlinks=true,
-                linkcolor=linkscolor,
-                filecolor=linkscolor,
-                urlcolor=linkscolor,
-                urlbordercolor=linkscolor}
+                linkcolor=interncolor,
+                filecolor=interncolor,
+                urlcolor=webcolor,
+                urlbordercolor=webcolor}
 output:
   vitae::awesomecv:
     page_total: true
@@ -25,7 +26,7 @@ knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = e
 
 ```{r setup, include=FALSE}
 #### design settings for the output ####
-sort_year_desc <- TRUE                                                          # sort the publications descending (latest first) or ascending (oldest first)
+sort_year_desc <- FALSE                                                          # sort the publications descending (latest first) or ascending (oldest first)
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)           # default settings for CV output
 
@@ -37,7 +38,7 @@ library(vitae)                                                                  
 # library(lubridate)                                                              # time data manipulation
 ```
 
-Find below an overview about my [peer-reviewed articles][Articles], [book chapters][Book Chapters], [GitHub repositories][GitHub repositories], elsewhere published [code][Code published elsewhere], published [data][Data published], and [post- and preprints][Post- and Preprints].
+Find below an overview about my [peer-reviewed articles][Articles], [book chapters][Book Chapters], [GitHub repositories][GitHub repositories], elsewhere published [code][Code published elsewhere], published [data][Data published], [post- and preprints][Post- and Preprints], and [other publications][Theses, Manuals, Method Descriptions, and other Reports].
 
 # Articles
 
@@ -107,6 +108,18 @@ if(sort_year_desc){
     arrange(desc(issued), author$family)
 } else{
   bibliography_entries("data/bib_preprints.bib") %>%
+    arrange(desc(issued), author$family)
+}
+```
+
+# Theses, Manuals, Method Descriptions, and other Reports
+
+```{r other_pubs}
+if(sort_year_desc){
+  bibliography_entries("data/bib_others.bib") %>%
+    arrange(desc(issued), author$family)
+} else{
+  bibliography_entries("data/bib_others.bib") %>%
     arrange(desc(issued), author$family)
 }
 ```
