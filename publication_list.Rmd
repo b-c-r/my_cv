@@ -75,6 +75,17 @@ if(sort_year_desc){
 #  arrange(desc(issued), author$family)
 ```
 
+# Pre- and Postprints
+
+```{r preprints}
+if(sort_year_desc){
+  bibliography_entries("data/bib_preprints.bib") %>%
+    arrange(desc(issued), author$family)
+} else{
+  bibliography_entries("data/bib_preprints.bib") %>%
+    arrange(desc(issued), author$family)
+}
+```
 
 
 ```{r eval=FALSE, include=FALSE}
