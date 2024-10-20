@@ -1,6 +1,6 @@
 # My public CV
 
--   Publication List [pdf](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/publication_list.pdf)
+-   [Publication List as pdf](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/publication_list.pdf)
 
 ## Resources Used
 
