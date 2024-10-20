@@ -1,66 +1,85 @@
 ---
-name: Marie
-surname: Curie
-position: "Professor"
-pronouns: she/her
-address: "School of Physics & Chemistry, École Normale Supérieure"
-phone: +1 22 3333 4444
-www: mariecurie.com
-email: "Marie.Curie@ens.fr"
-twitter: mariecurie
-github: mariecurie
-linkedin: mariecurie
+name: Dr. Björn C.
+surname: Rall
+position: "Computational Ecologist, Biostatistician, and Lecturer"
+orcid: 0000-0002-3191-8389
+publons: G-1508-2013
+googlescholar: kxLDLlMAAAAJ&hl
+github: b-c-r
+linkedin: bjoern-c-rall
 date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 027d00
+header-includes:
+  - \definecolor{linkscolor}{HTML}{001594}
+  - \hypersetup{colorlinks=true,
+                linkcolor=linkscolor,
+                filecolor=linkscolor,
+                urlcolor=linkscolor,
+                urlbordercolor=linkscolor}
 output:
   vitae::awesomecv:
     page_total: true
+csl: data/bibstyle_current-biology.csl
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_dir = "pdf_cv_files") }) 
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae)
+#### design settings for the output ####
+sort_year_desc <- TRUE                                                          # sort the publications descending (latest first) or ascending (oldest first)
+
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)           # default settings for CV output
+
+# load packages:
+library(vitae)                                                                  # required package for knitting LaTeX CVs from RMarkdown
+# library(tibble)                                                                 # For data structure
+# library(readr)                                                                  # import data in an elegant way
+# library(dplyr)                                                                  # data wrangling
+# library(lubridate)                                                              # time data manipulation
 ```
 
-# Some stuff about me
+# Articles (peer reviewed)
 
- * I poisoned myself doing research.
- * I was the first woman to win a Nobel prize
- * I was the first person and only woman to win a Nobel prize in two different sciences.
-
-# Education
-
-```{r}
-library(tibble)
-tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Informal studies", "1889-91", "Flying University", "Warsaw, Poland",
-  "Master of Physics", "1893", "Sorbonne Université", "Paris, France",
-  "Master of Mathematics", "1894", "Sorbonne Université", "Paris, France"
-) %>%
-  detailed_entries(Degree, Year, Institution, Where)
+```{r articles}
+if(sort_year_desc){
+  bibliography_entries("data/bib_articles.bib") %>%
+    arrange(desc(issued), author$family)
+} else{
+  bibliography_entries("data/bib_articles.bib") %>%
+    arrange(desc(issued), author$family)
+}
 ```
 
-# Nobel Prizes
+# Book Chapters
 
-```{r}
-tribble(
-  ~Year, ~Type, ~Desc,
-  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
-  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
-) %>%
-  brief_entries(
-    glue::glue("Nobel Prize in {Type}"),
-    Year,
-    Desc
-  )
+```{r book_chapters}
+if(sort_year_desc){
+  bibliography_entries("data/bib_book_chapters.bib") %>%
+    arrange(desc(issued), author$family)
+} else{
+  bibliography_entries("data/bib_book_chapters.bib") %>%
+    arrange(desc(issued), author$family)
+}
 ```
 
-# Publications
+# Code Publications
 
-```{r}
-library(dplyr)
-knitr::write_bib(c("vitae", "tibble"), "packages.bib")
-
-bibliography_entries("packages.bib") %>%
-  arrange(desc(author$family), issued)
+```{r code_publications}
+#bibliography_entries("data/code_publications.bib") %>%
+#  arrange(desc(issued), author$family)
 ```
+
+# Data Publications
+
+```{r data_publications}
+#bibliography_entries("data/data_publications.bib") %>%
+#  arrange(desc(issued), author$family)
+```
+
+
+
+```{r eval=FALSE, include=FALSE}
+## helpful resources, thx to the authors:
+# https://stackoverflow.com/questions/26174565/r-in-rstudio-how-do-i-make-knitr-output-to-a-different-folder-to-avoid-clutteri
+```
+
+
