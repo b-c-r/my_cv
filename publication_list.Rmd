@@ -11,7 +11,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 027d00
 header-includes:
   - \definecolor{webcolor}{HTML}{001594}
-  - \definecolor{interncolor}{HTML}{737373}
+  - \definecolor{interncolor}{HTML}{4c7286}
   - \hypersetup{colorlinks=true,
                 linkcolor=interncolor,
                 filecolor=interncolor,
