@@ -44,7 +44,7 @@ include_cert_furth_edu <- TRUE                                                  
 
 # Professional Experience
 
-Note that all the below mentioned jobs included research, publishing [peer-reviewed papers](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/publication_list.pdf), oral presentations (e.g. invited talks), and collaborating internationally.
+Note that all the below mentioned jobs included research, publishing [peer-reviewed papers](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/publication_list.pdf), oral presentations (e.g. [invited talks](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/invited_talks.pdf)), and collaborating internationally.
 
 ```{r}
 jobs <- read_csv("data/cvdata_jobs.csv")
