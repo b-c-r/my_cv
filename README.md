@@ -1,8 +1,10 @@
-# My public CV
+# My public CV as PDF
 
 -   [My CV](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/my_cv.pdf)
 
--   [Publication List as pdf](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/publication_list.pdf)
+-   [Publication List](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/publication_list.pdf)
+
+-   [List of Invited Talks](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/invited_talks.pdf)
 
 ## Resources Used
 
