@@ -1,0 +1,49 @@
+---
+name: Dr. Björn C.
+surname: Rall
+position: "Computational Ecologist, Biostatistician, and Lecturer"
+orcid: 0000-0002-3191-8389
+publons: G-1508-2013
+googlescholar: kxLDLlMAAAAJ&hl
+github: b-c-r
+linkedin: bjoern-c-rall
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 027d00
+header-includes:
+  - \definecolor{skillcolor}{HTML}{027d00}
+  - \definecolor{webcolor}{HTML}{001594}
+  - \definecolor{interncolor}{HTML}{4c7286}
+  - \hypersetup{colorlinks=true,
+                linkcolor=interncolor,
+                filecolor=interncolor,
+                urlcolor=webcolor,
+                urlbordercolor=webcolor}
+output:
+  vitae::awesomecv:
+    page_total: true
+csl: data/bibstyle_current-biology.csl
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_dir = "pdf_cv_files") }) 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)           # default
+# load packages:
+library(vitae)                                                                  # wrapper for using LaTeX CV templates from RMarkdown
+library(readr)                                                                  # import data in an elegant way
+```
+
+Below is a selection of talks I was invited to give.
+
+# Invited Talks
+
+```{r}
+inv_talks <- read_csv("data/cvdata_inv_talks.csv")
+inv_talks %>%
+  arrange(desc(title_id), sub_id) %>%
+  brief_entries(
+    what = details,
+    when = when,
+    with = with,
+    .protect = FALSE
+  )
+```
