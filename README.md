@@ -6,6 +6,8 @@
 
 -   [List of Invited Talks](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/invited_talks.pdf)
 
+-   [Teaching Experience](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/teaching.pdf)
+
 ## Resources Used
 
 -   [Vitae Package](https://doi.org/10.32614/CRAN.package.vitae)
