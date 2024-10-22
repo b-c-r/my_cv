@@ -1,0 +1,8 @@
+title_id,sub_id,category,what,details
+1,1,\textcolor{skillcolor}{\textbf{Code}},ODE simulations,Rall (2023): Rare Type III functional responses (Code): Version 1.0.0. \href{https://doi.org/10.5281/zenodo.7637479}{https://doi.org/10.5281/zenodo.7637479}
+1,2,,,Find \href{10.3389/fevo.2023.1033818}{here} the associated study and \href{https://github.com/b-c-r/rare-type-3-responses}{here} the associated GitHub repository
+2,1,\textcolor{skillcolor}{\textbf{Stats Dev}},MLE statistics,Rosenbaum \& Rall (2018): Fitting functional responses: direct parameter estimation by simulating
+2,2,,ODE simulations,differential equations. Methods Ecol Evol 9: 2076-2090. \href{https://doi.org/10.1111/2041-210X.13039}{https://doi.org/10.1111/2041-210X.13039}
+2,3,,,Find the associated manual \href{https://bit.ly/3gzOpVW}{here}
+3,1,\textcolor{skillcolor}{\textbf{Study}},Mixed Eff. Models,Rall et al. (2012): Universal temperature and body-mass scaling of feeding rates. Philos Trans R Soc B
+3,2,,,367: 2923-2934. \href{https://doi.org/10.1098/rstb.2012.0242}{https://doi.org/10.1098/rstb.2012.0242}

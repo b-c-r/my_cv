@@ -1,0 +1,139 @@
+---
+name: Dr. Björn C.
+surname: Rall
+position: "Computational Ecologist, Biostatistician, and Lecturer"
+orcid: 0000-0002-3191-8389
+publons: G-1508-2013
+googlescholar: kxLDLlMAAAAJ&hl
+github: b-c-r
+linkedin: bjoern-c-rall
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 027d00
+header-includes:
+  - \usepackage{pdfpages}                                                       # include pdf pages (alternative way to used here)
+  - \definecolor{skillcolor}{HTML}{027d00}
+  - \definecolor{webcolor}{HTML}{001594}
+  - \definecolor{interncolor}{HTML}{4c7286}
+  - \hypersetup{colorlinks=true,
+                linkcolor=interncolor,
+                filecolor=interncolor,
+                urlcolor=webcolor,
+                urlbordercolor=webcolor}
+output:
+  vitae::awesomecv:
+    page_total: true
+csl: data/bibstyle_current-biology.csl
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_dir = "pdf_cv_files") }) 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+
+# load packages:
+library(vitae)                                                                  # wrapper for using LaTeX CV templates from RMarkdown
+library(readr)                                                                  # import data in an elegant way
+library(here)                                                                   # easy path manipulation
+```
+
+```{r style_settings, include=FALSE}
+job_title_first <- TRUE                                                         # boolean; TRUE = job title first, FALSE = employer first
+include_cert_furth_edu <- TRUE                                                  # boolean; TRUE = include further education certificates pdfs, FALSE = don't include them
+```
+
+# Professional Experience
+
+Note that all the below mentioned jobs included research, publishing [peer-reviewed papers](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/publication_list.pdf), oral presentations (e.g. invited talks), and collaborating internationally.
+
+```{r}
+jobs <- read_csv("data/cvdata_jobs.csv")
+if(job_title_first){
+  jobs %>%
+    arrange(desc(title_id), sub_id) %>%
+    detailed_entries(
+      with = title,
+      what = institution,
+      why = details,
+      when = glue::glue("{start_date} - {end_date}", .na = "now"),
+      where = place,
+      .protect = FALSE
+    )
+} else{
+  jobs %>%
+    arrange(desc(title_id, sub_id)) %>%
+    detailed_entries(
+      with = institution,
+      what = title,
+      why = details,
+      when = glue::glue("{start_date} - {end_date}", .na = "now"),
+      where = place,
+      .protect = FALSE
+    )
+}
+
+```
+
+\pagebreak
+
+# Education
+
+```{r}
+edu <- read_csv("data/cvdata_education.csv")
+edu %>%
+  arrange(desc(title_id)) %>%
+  detailed_entries(
+    with = institution,
+    what = title,
+    why = details,
+    when = glue::glue("{start_date} - {end_date}",.na = ""),
+    where = place,
+    .protect = FALSE
+  )
+```
+
+# Skills and Expertises
+
+```{r}
+skills <- read_csv("data/cvdata_skills.csv")
+skills %>%
+  arrange(title_id, sub_id) %>%
+  brief_entries(
+    what = details,
+    when = category,
+    .protect = FALSE
+  )
+```
+
+# Work Examples
+
+```{r}
+examples <- read_csv("data/cvdata_examples.csv")
+examples %>%
+  arrange(title_id, sub_id) %>%
+  brief_entries(
+    what = details,
+    when = category,
+    with = what,
+    .protect = FALSE
+  )
+```
+
+Find my full publication list [here](https://github.com/b-c-r/my_cv/blob/main/pdf_cv_files/publication_list.pdf).
+
+```{r child = "rmd_files/certificates_further_edu.rmd", eval = include_cert_furth_edu, include = include_cert_furth_edu}
+```
+
+```{r eval=FALSE, include=FALSE}
+## Sources that helped setting up this document (unsorted)
+# including pdf pages: https://www.youtube.com/watch?v=70uvxldpjG8
+# https://github.com/mitchelloharawild/vitae
+# https://github.com/tallguyjenks/CV
+# https://shaziaruybal.github.io/automate-cv-rmd/#1
+# https://stackoverflow.com/questions/51268623/insert-images-using-knitrinclude-graphics-in-a-for-loop
+# https://bookdown.org/yihui/rmarkdown-cookbook/pagebreaks.html
+# https://stackoverflow.com/questions/25240541/how-to-add-newpage-in-rmarkdown-in-a-smart-way
+# https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
+# https://stackoverflow.com/questions/25824795/how-to-combine-two-rmarkdown-rmd-files-into-a-single-output
+# https://bookdown.org/yihui/bookdown/figures.html
+```
