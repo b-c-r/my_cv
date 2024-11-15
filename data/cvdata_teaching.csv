@@ -1,4 +1,5 @@
 title_id,sub_id,title,institution,place,date,details
+24,1,Evolutionsökologie,\href{https://www.bio.tu-darmstadt.de/studium/studieninteressierte/biologie_bsc/index.de.jsp}{B.Sc. Biology (Darmstadt University of Technology)},"Darmstadt, DE",2022,"WS 21/22 | approx.  3 weeks, lectures, seminar, and training | language: German | contributing lecturer (approx. 45\%)"
 23,1,Writing reports using R-Markdown and iDiv’s Gitlab/Github,\href{https://www.idiv.de/en/ydiv.html}{iDiv’s graduate school yDiv},"Leipzig, DE",2019,2-days course for PhD students
 22,1,Theoretical Ecology and Computer Simulation,,,2019,2-week course for PhD-students
 22,2,Theoretical Ecology and Computer Simulation,,,2019,"this is the course Advanced Statistics 1 - Non-linear modelling at FSU, see below"
@@ -6,24 +7,24 @@ title_id,sub_id,title,institution,place,date,details
 21,2,Advanced Statistics 1 - Non-linear modelling,,,2017 \& 2019,"this is the course Theoretische Ökologie 1 \& Computersimulation ökologischer Prozesse in 2019 at FSU, see below"
 20,1,Ecological Statistics in R Part 2,,,2015,1-week workshop for PhD students.
 19,1,Ecological Statistics in R Part 1,,,2015,1-week workshop for PhD students.
-18,1,Statistics for ecologists – an overview,\href{https://www.aquadiva.uni-jena.de/154/irtg-aquadiva}{Integrated Research Training Group AquaDiva},"Jena, DE",2017,half-day workshop for PhD students
+18,1,Statistics for ecologists – an overview,\href{https://www.aquadiva.uni-jena.de/154/irtg-aquadiva}{Integrated research training group AquaDiva},"Jena, DE",2017,half-day workshop for PhD students
 17,1,Advanced Statistics 1 - Non-linear modelling,"\href{https://www.uni-jena.de/en/6640/m-sc-evolution-ecology-and-systematics}{M.Sc. Evolution, Ecology and Systematics (Friedrich-Schiller-University Jena)}","Jena, DE",2019,SS 19 | 2 SWS block course | language: English | responsible lecturer (100\%)
-17,2,Advanced Statistics 1 - Non-linear modelling,,,2019,"This is the course Advanced Statistics 1 - Non-linear modelling at yDiv, see above"
-16,1,Analyse biologischer Daten,,,2017-2019,WS 17/18 - WS 18/19 | 4 SWS block course | language: English | contributing lecturer (~50\%)
+17,2,Advanced Statistics 1 - Non-linear modelling,"\href{https://www.uni-jena.de/en/6640/m-sc-evolution-ecology-and-systematics}{M.Sc. Evolution, Ecology and Systematics (Friedrich-Schiller-University Jena)}","Jena, DE",2019,"This is the course Advanced Statistics 1 - Non-linear modelling at yDiv, see above"
+16,1,Analyse biologischer Daten,,,2017-2019,WS 17/18 - WS 18/19 | 4 SWS block course | language: English | contributing lecturer (approx. 50\%)
 15,1,Theoretische Ökologie 1 \& Computersimulation ökologischer Prozesse,,,2019,SS 19 | 4 SWS block course | language: English | responsible lecturer (100\%)
 15,2,Theoretische Ökologie 1 \& Computersimulation ökologischer Prozesse,,,2019,"This is the course Theoretical Ecology and Computer Simulation at yDiv, see above"
-14,1,Computersimulation ökologischer Prozesse,,,2015-2018,"WS 15/16 - WS 17/18 | 2 SWS block course | language: English | shared responsible lecturer (~75\%, 50\% in WS 17/18)"
-13,1,Theoretische Ökologie 1,,,2015-2018,"WS 15/16 - WS 17/18 | 2 SWS lecture | language: English | contributing lecturer (~30\%, ~50\% in WS 17/18)"
-12,1,Island Biogeography,,,2016,SS 16 | 10 days field course | language: English | contributing lecturer (~30\%)
-11,1,Integrative Ökologie,\href{https://www.bio.uni-jena.de/630/bachelor-biologie}{B.Sc. Biology (Friedrich-Schiller-University Jena)},"Jena, DE",2017-2018,WS 17/18 | 2 SWS lecture series | language: German | contributing lecturer (~15\%)
+14,1,Computersimulation ökologischer Prozesse,,,2015-2018,"WS 15/16 - WS 17/18 | 2 SWS block course | language: English | shared responsible lecturer (approx. 75\%, approx. 50\% in WS 17/18)"
+13,1,Theoretische Ökologie 1,,,2015-2018,"WS 15/16 - WS 17/18 | 2 SWS lecture | language: English | contributing lecturer (approx. 30\%, approx. 50\% in WS 17/18)"
+12,1,Island Biogeography,,,2016,SS 16 | 10 days field course | language: English | contributing lecturer (approx. 30\%)
+11,1,Integrative Ökologie,\href{https://www.bio.uni-jena.de/630/bachelor-biologie}{B.Sc. Biology (Friedrich-Schiller-University Jena)},"Jena, DE",2017-2018,WS 17/18 | 2 SWS lecture series | language: German | contributing lecturer (approx. 15\%)
 10,1,Fitting Non-Linear Models to Data in R,\href{https://nioo.knaw.nl/en}{Netherlands Institute of Ecology (NIOO-KNAW)},"Wageningen, NL",2014,3 days workshop for PhD students up to senior scientists
 9,1,"Applied Statistics and Meta-Analyses in Biodiversity, Ecology and Evolution","\href{https://www.uni-goettingen.de/en/685972.html}{M.Sc. Biodiversity, Ecology, and Evolution (Georg-August-University Göttingen)}","Göttingen, DE",2013-2015,WS 13/14 \& WS 14/15 | 8 SWS block course | language: English | responsible lecturer (100\%)
 8,1,Statistics for Ecology and Conservation Biology,,,2010-2015,WS 10/11 - WS 12/13 | 2 SWS lecture and training series | language: English
-8,2,Statistics for Ecology and Conservation Biology,,,2010-2015,responsible lecturer (100\% contribution and ~70\% in WS 11/12 \& WS 12/13)
-7,1,Ecological Models - From Populations to Networks,,,2011-2015,WS 11/12 - WS 14/15 | 8 SWS block course (6 SWS in WS 11/12) | language: English | contributing lecturer (~50\%)
-6,1,Biodiversity and Ecosystem Functioning,,,2011-2013,WS 11/12 \& SS 13 | 8 SWS block course | language: English | contributing lecturer (~50\%)
-5,1,Tierökologie: Synökologie der Tiere,,,2014-2015,WS 14/15 | 8 SWS block course | language: English | contributing lecturer (~50\%)
-4,1,Field studies in Conservation Biology,,,2011,8 SWS field course | language: English | contributing lecturer (~50\%)
-3,1,Animal Ecology,,,2011-2015,WS 11/12 - WS 14/15 | 2 SWS lecture series | language: English | contributing lecturer (~20%)
-2,1,Aufbau und Auswertung von Biodiversitätsexperimenten,,,2012-2013,WS 12/13 | 8 SWS block course | language: English | contributing lecturer (~20\%)
-1,1,International Nature Conservation,,,2011-2013,"SS 11 \& 12, WS 12/13 | 2SWS lecture series | language: English | contributing lecturer (~15\%)"
+8,2,Statistics for Ecology and Conservation Biology,,,2010-2015,responsible lecturer (100\% contribution and approx. 70\% in WS 11/12 \& WS 12/13)
+7,1,Ecological Models - From Populations to Networks,,,2011-2015,WS 11/12 - WS 14/15 | 8 SWS block course (6 SWS in WS 11/12) | language: English | contributing lecturer (approx. 50\%)
+6,1,Biodiversity and Ecosystem Functioning,,,2011-2013,WS 11/12 \& SS 13 | 8 SWS block course | language: English | contributing lecturer (approx. 50\%)
+5,1,Tierökologie: Synökologie der Tiere,,,2014-2015,WS 14/15 | 8 SWS block course | language: English | contributing lecturer (approx. 50\%)
+4,1,Field studies in Conservation Biology,,,2011,8 SWS field course | language: English | contributing lecturer (approx. 50\%)
+3,1,Animal Ecology,,,2011-2015,WS 11/12 - WS 14/15 | 2 SWS lecture series | language: English | contributing lecturer (approx. 20\%)
+2,1,Aufbau und Auswertung von Biodiversitätsexperimenten,,,2012-2013,WS 12/13 | 8 SWS block course | language: English | contributing lecturer (approx. 20\%)
+1,1,International Nature Conservation,,,2011-2013,"SS 11 \& 12, WS 12/13 | 2SWS lecture series | language: English | contributing lecturer (approx. 15\%)"
